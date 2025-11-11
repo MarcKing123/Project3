@@ -1,0 +1,15 @@
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.AssemblyInfoInputs.cache
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.AssemblyInfo.cs
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.csproj.CoreCompileInputs.cache
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.sourcelink.json
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\bin\Debug\net8.0-windows\SpaceRacer.exe
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\bin\Debug\net8.0-windows\SpaceRacer.deps.json
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\bin\Debug\net8.0-windows\SpaceRacer.runtimeconfig.json
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\bin\Debug\net8.0-windows\SpaceRacer.dll
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\bin\Debug\net8.0-windows\SpaceRacer.pdb
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.dll
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\refint\SpaceRacer.dll
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.pdb
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\SpaceRacer.genruntimeconfig.cache
+C:\Users\marcd\OneDrive\Documents\Desktop\Project3\obj\Debug\net8.0-windows\ref\SpaceRacer.dll
