@@ -334,7 +334,7 @@ namespace SpaceRacer
                 using (var font = new Font("Arial", 14, FontStyle.Bold))
                 using (var textBrush = new SolidBrush(Color.White))
                 {
-                    var text = "PU";
+                    var text = "Power";
                     var size = g.MeasureString(text, font);
                     var x = Bounds.X + (Bounds.Width - size.Width) / 2;
                     var y = Bounds.Y + (Bounds.Height - size.Height) / 2;
@@ -350,12 +350,12 @@ namespace SpaceRacer
                 }
                 // "OHK" text
                 using (var font = new Font("Arial", 12, FontStyle.Bold))
-                using (var textBrush = new SolidBrush(Color.Black))
+                using (var textBrush = new SolidBrush(Color.White))
                 {
-                    var text = "OHK";
+                    var text = "One-Hit";
                     var size = g.MeasureString(text, font);
-                    var x = Bounds.X + (Bounds.Width - size.Width) / 2;
-                    var y = Bounds.Y + (Bounds.Height - size.Height) / 2;
+                    var x = Bounds.X + (Bounds.Width - size.Width) / 1;
+                    var y = Bounds.Y + (Bounds.Height - size.Height) / 1;
                     g.DrawString(text, font, textBrush, x, y);
                 }
             }
