@@ -226,10 +226,10 @@ namespace SpaceRacer
                 {
                     if (b.Bounds.IntersectsWith(enemies[ei].Bounds))
                     {
-                        // create a small explosion at enemy center when hit
+                        // create explosion at enemy center when hit
                         var ex = enemies[ei].Bounds.X + enemies[ei].Bounds.Width / 2;
                         var ey = enemies[ei].Bounds.Y + enemies[ei].Bounds.Height / 2;
-                        explosions.Add(new Explosion(new System.Drawing.PointF(ex, ey)));
+                        explosions.Add(new Explosion(new System.Drawing.PointF(ex, ey), 400f, 34f));
 
                         // if one-hit-kill is active, instantly destroy
                         if (player.HasOneHitKill())
@@ -246,6 +246,8 @@ namespace SpaceRacer
                         if (enemies[ei].Health <= 0)
                         {
                             score += enemies[ei].ScoreValue;
+                            // create burst of small explosions when enemy is eliminated
+                            CreateExplosionBurst(ex, ey);
                             // randomly spawn a power-up when enemy is destroyed
                             if (rng.Next(0, 100) < 25) // 25% chance
                             {
@@ -292,6 +294,22 @@ namespace SpaceRacer
                     powerups.RemoveAt(pi);
                 }
             }
+        }
+
+        private void CreateExplosionBurst(float centerX, float centerY)
+        {
+            // Create a burst of 4 small explosions radiating outward
+            int numExplosions = 4;
+            for (int i = 0; i < numExplosions; i++)
+            {
+                float angle = (float)(i * 2 * Math.PI / numExplosions);
+                float offsetDist = 15f;
+                float x = centerX + offsetDist * (float)Math.Cos(angle);
+                float y = centerY + offsetDist * (float)Math.Sin(angle);
+                explosions.Add(new Explosion(new System.Drawing.PointF(x, y), 300f, 20f));
+            }
+            // Add one large explosion at center
+            explosions.Add(new Explosion(new System.Drawing.PointF(centerX, centerY), 350f, 25f));
         }
 
         protected override void OnPaint(PaintEventArgs e)
