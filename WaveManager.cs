@@ -126,7 +126,10 @@ namespace SpaceRacer
                         int ex = rng.Next(20, width - 60);
                         int ey = -rng.Next(40, 120);
                         int health = 1 + (CurrentWave / 3) + rng.Next(0, 2);
-                        int speed = 1 + (CurrentWave / 4) + rng.Next(0, 2);
+                        // Reduce scaling so enemies move more slowly overall.
+                        // Previously used (CurrentWave / 4); using a larger divisor
+                        // produces a gentler speed increase as waves progress.
+                        int speed = System.Math.Max(1, 1 + (CurrentWave / 6) + rng.Next(0, 2));
                         int score = 10 + CurrentWave * 2;
                         enemies.Add(new Enemy(new Rectangle(ex, ey, 40, 40), health, speed, score));
                         spawnedCount++;

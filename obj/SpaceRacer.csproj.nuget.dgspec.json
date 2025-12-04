@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj": {}
+    "c:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj": {
+    "c:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj",
+        "projectUniqueName": "c:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj",
         "projectName": "SpaceRacer",
-        "projectPath": "C:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj",
+        "projectPath": "c:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj",
         "packagesPath": "C:\\Users\\marcd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\obj\\",
+        "outputPath": "c:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marcd\\AppData\\Roaming\\NuGet\\NuGet.Config"
