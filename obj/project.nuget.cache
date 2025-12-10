@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LS4TLzJJAmY=",
+  "dgSpecHash": "TdyKi22PUH0=",
   "success": true,
-  "projectFilePath": "c:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj",
+  "projectFilePath": "C:\\Users\\marcd\\OneDrive\\Documents\\Desktop\\Project3\\SpaceRacer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marcd\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
     "C:\\Users\\marcd\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",

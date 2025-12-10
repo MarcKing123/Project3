@@ -31,14 +31,18 @@ namespace SpaceRacer
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Title Label
+            // Title Label (large stylized title)
             titleLabel = new Label
             {
-                Text = TitleArt,
+                Text = "𝓢𝓹𝓪𝓬𝓮 𝓡𝓪𝓬𝓮𝓻",
                 ForeColor = Color.White,
-                Font = new Font("Consolas", 8),
-                AutoSize = true,
-                Location = new Point(10, 20)
+                BackColor = Color.Transparent,
+                // Use a large, readable font. 'Segoe UI Symbol' has good Unicode support.
+                Font = new Font("Segoe UI Symbol", 48, FontStyle.Bold),
+                AutoSize = false,
+                Size = new Size(760, 110),
+                Location = new Point((800 - 760) / 2, 30),
+                TextAlign = ContentAlignment.MiddleCenter
             };
 
             // Start Button
@@ -48,7 +52,7 @@ namespace SpaceRacer
                 Size = new Size(200, 50),
                 Location = new Point(300, 300),
                 FlatStyle = FlatStyle.Flat,
-                BackColor = Color.FromArgb(0, 100, 255),
+                BackColor = Color.FromArgb(200, 40, 40),
                 ForeColor = Color.White,
                 Font = new Font("Arial", 14, FontStyle.Bold)
             };
@@ -61,7 +65,7 @@ namespace SpaceRacer
                 Size = new Size(200, 50),
                 Location = new Point(300, 370),
                 FlatStyle = FlatStyle.Flat,
-                BackColor = Color.FromArgb(0, 100, 255),
+                BackColor = Color.FromArgb(200, 40, 40),
                 ForeColor = Color.White,
                 Font = new Font("Arial", 14, FontStyle.Bold)
             };
@@ -74,17 +78,17 @@ namespace SpaceRacer
                 Size = new Size(200, 50),
                 Location = new Point(300, 440),
                 FlatStyle = FlatStyle.Flat,
-                BackColor = Color.FromArgb(0, 100, 255),
+                BackColor = Color.FromArgb(200, 40, 40),
                 ForeColor = Color.White,
                 Font = new Font("Arial", 14, FontStyle.Bold)
             };
             exitButton.Click += ExitButton_Click;
 
-            // Add hover effects
+            // Add hover effects (red theme)
             foreach (Button button in new[] { startButton, howToPlayButton, exitButton })
             {
-                button.MouseEnter += (s, e) => button.BackColor = Color.FromArgb(0, 150, 255);
-                button.MouseLeave += (s, e) => button.BackColor = Color.FromArgb(0, 100, 255);
+                button.MouseEnter += (s, e) => button.BackColor = Color.FromArgb(255, 70, 70);
+                button.MouseLeave += (s, e) => button.BackColor = Color.FromArgb(200, 40, 40);
             }
 
             // Add controls to form
